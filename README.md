@@ -1,5 +1,6 @@
 EmployeePaychecks is an application designed to read in a text file with employee data
 and create three new text files with information regarding the employee.
+Designed with Visual Studio 2017.
 
 This first application is a .NET Frameworks Console Application where the project local Employees.txt 
 file will be read in and used to create Paychecks.txt, TopEarners.txt, and States.txt. 
