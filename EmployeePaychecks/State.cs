@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace EmployeePaychecks
 {
+    /*
+     * Date: 26 March 2018
+     * Author: Allen Bates
+     * Description: The State class is used to define each
+     * state that the employees of Employees.txt work in.
+     * 
+     */
     class State
     {
         public String name { get; set; }

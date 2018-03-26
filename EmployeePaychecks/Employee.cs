@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace EmployeePaychecks
 {
+    /*
+     * Date: 26 March 2018
+     * Author: Allen Bates 
+     * Description: The Employee class defines the Employee object 
+     * created when reading in each line of the Employees.txt file. 
+     */
     class Employee 
     {
         public String id;
@@ -137,10 +143,10 @@ namespace EmployeePaychecks
                    " Start Date: " + this.startDate.ToString() +
                    " State of Residence: " + this.stateOfResidence +
                    " Hours Worked in Two Weeks: " + this.hoursWorkedInTwoWeeks +
-                   " Federal Tax: " + this.federalTax +
-                   " State Tax: " + this.stateTax +
-                   " Gross Pay: " + this.grossPay +
-                   " Net Pay: " + this.netPay +
+                   " Federal Tax: $" + this.federalTax +
+                   " State Tax: $" + this.stateTax +
+                   " Gross Pay: $" + this.grossPay +
+                   " Net Pay: $" + this.netPay +
                    " Years Worked: " + this.yearsWorked;
         }
     }

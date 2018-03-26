@@ -8,6 +8,17 @@ using System.Threading.Tasks;
 
 namespace EmployeePaychecks
 {
+    /*
+     * Date: 26 March 2018
+     * Author: Allen Bates
+     * Description: Program.cs is the main UI for the EmployeePaychecks app.
+     * Here, the program will begin by reading Employees.txt, storing each
+     * employee and then creating Paychecks.txt, TopEarners.txt and States.txt.
+     * These files are saved in the bin/Debug folder of the project.
+     * After these files are created, the user can then search for 
+     * employees data by entering an employee ID.
+     */
+
     class Program
     {
         //Method for creating Paychecks.txt
@@ -30,10 +41,10 @@ namespace EmployeePaychecks
                     line = "Employee Id: " + e.id +
                         " First Name: " + e.firstName +
                         " Last Name: " + e.lastName +
-                        " Gross Pay: " + e.grossPay +
-                        " Federal Tax: " + e.federalTax +
-                        " State Tax: " + e.stateTax +
-                        " Net Pay: " + e.netPay;
+                        " Gross Pay: $" + e.grossPay +
+                        " Federal Tax: $" + e.federalTax +
+                        " State Tax: $" + e.stateTax +
+                        " Net Pay: $" + e.netPay;
                     sw.WriteLine(line);
                 }
                 sw.Close();
@@ -78,7 +89,7 @@ namespace EmployeePaychecks
                     line = "First Name: " + e.firstName +
                         " Last Name: " + e.lastName +
                         " Years Worked: " + e.yearsWorked +
-                        " Gross Pay: " + e.grossPay;
+                        " Gross Pay: $" + e.grossPay;
                     sw.WriteLine(line);
                 }
 
@@ -140,8 +151,8 @@ namespace EmployeePaychecks
                 {
                     line = "State: " + s.name +
                            " Median Time Worked: " + s.stateTimeWorked.ElementAt(s.stateTimeWorked.Count/2) +
-                           " Median Net Pay: " + s.stateNetPay.ElementAt(s.stateNetPay.Count/2) +
-                           " Total State Taxes Paid: " + s.totalStateTaxesPaid;
+                           " Median Net Pay: $" + s.stateNetPay.ElementAt(s.stateNetPay.Count/2) +
+                           " Total State Taxes Paid: $" + s.totalStateTaxesPaid;
                     sw.WriteLine(line);
                 }
                 sw.Close();
