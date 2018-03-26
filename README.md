@@ -6,3 +6,5 @@ This first application is a .NET Frameworks Console Application where the projec
 file will be read in and used to create Paychecks.txt, TopEarners.txt, and States.txt. 
 Once these files are created, the user will be able to lookup an employee's details by entering 
 their employee ID into the console interface. 
+
+Paychecks.txt, TopEarners.txt, and States.txt are all saved in the bin/Debug folder of the project directory.
